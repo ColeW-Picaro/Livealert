@@ -11,10 +11,10 @@ streamlabs.on('connect', () => {
 streamlabs.on('event', async (eventData) => {
 	if (eventData.type == 'subscription' || eventData.type == 'bits') {
     		console.log(eventData);
-		output = execSync('sudo ./uhubctl -l 1-1 -p 2 -a off', { encoding: 'utf-8'});
+		output = execSync('sudo ./uhubctl -l 2 -a 0', { encoding: 'utf-8'});
 		console.log(output);
 		await new Promise(resolve => setTimeout(resolve, 1000));
-		output = execSync('sudo ./uhubctl -l 1-1 -p 2 -a on', { encoding: 'utf-8'});
+		output = execSync('sudo ./uhubctl -l 2 -a on', { encoding: 'utf-8'});
 		console.log(output);
   	}
 });

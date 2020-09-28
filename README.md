@@ -11,3 +11,12 @@ NOTE: Only works on Raspberry Pi 4
 3. Modify the `{STREAMLABS_API}` in `main.js` with your own Streamlabs API token (found in dashboard settings). Make sure you get rid of the curly braces `{}` too.
 
 4. Save the changes in `main.js`. Run `sudo nohup node main.js &` and enjoy.
+
+## Buy us some beer!
+Credits to mvp for their `uhubctl` tool: https://github.com/mvp/uhubctl  
+This program is used on GrauGott's twitch stream: https://www.twitch.tv/graugott  
+Buy me a beer/coffee/beverage if you like it: https://ko-fi.com/colewsos  
+My Twitch: https://www.twitch.tv/colew_picaro
+
+## Contributing  
+Open a PR!

@@ -10,13 +10,14 @@ streamlabs.on('connect', () => {
 
 streamlabs.on('event', async (eventData) => {
 	if (eventData.type == 'subscription' || eventData.type == 'bits' || eventData.type == 'donation') {
+    		console.log(eventData);
 		for (var i = 0; i < 3; ++i) {
-    			console.log(eventData);
 			output = execSync('sudo ./uhubctl -l 2 -a 0', { encoding: 'utf-8'});
-			console.log(output);
-			await new Promise(resolve => setTimeout(resolve, 1000));
+			//console.log(output);
+			await new Promise(resolve => setTimeout(resolve, 500));
 			output = execSync('sudo ./uhubctl -l 2 -a on', { encoding: 'utf-8'});
-			console.log(output);
+			//console.log(output);
+			await new Promise(resolve => setTimeout(resolve, 500));
 		}
   	}
 });

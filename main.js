@@ -9,7 +9,7 @@ streamlabs.on('connect', () => {
 });
 
 streamlabs.on('event', async (eventData) => {
-	if (eventData.type == 'subscription' || eventData.type == 'bits' || eventData.type == 'donation) {
+	if (eventData.type == 'subscription' || eventData.type == 'bits' || eventData.type == 'donation') {
 		for (var i = 0; i < 3; ++i) {
     			console.log(eventData);
 			output = execSync('sudo ./uhubctl -l 2 -a 0', { encoding: 'utf-8'});

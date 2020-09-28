@@ -4,7 +4,7 @@ NOTE: Only works on Raspberry Pi 4
 
 0. Install `node.js` and `npm`. (Raspbian for Raspberry Pi 4 comes with these).
 
-1. Open a terminal and clone this repository (`git clone https://github.com/ColeW-Picaro/Livealert.git`). 
+1. Open a terminal and clone this repository (`git clone https://github.com/ColeW-Picaro/Livealert.git`). This will create a directory called `Livealert`.
 
 2. cd into it (`cd Livealert`) and run `npm install`.
 
